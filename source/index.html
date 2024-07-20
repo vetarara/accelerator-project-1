@@ -1,21 +1,168 @@
 <!DOCTYPE html>
-<html lang="ru" data-validate="html">
+<html class="page" lang="ru" data-validate="html">
 
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUPERGYM</title>
     <link rel="stylesheet" href="sass/style.scss">
+    <style>
+      .main-header, .season-ticket {
+          /* Линейный градиент */
+          background: linear-gradient(to right, #1C3477, #1C3477, #1A3578, #73184B, #B4022A);
+      }
+  </style>
   </head>
 
-  <body class="page-body">
+  <body class="page__body">
+    <header class="main-header">
+      <a class="logo">
+        <!-- повторяется в футере, поэтому - блок -->
+        <img class="logo__image" src="img/logo.svg" width="130" height="26" alt="Supergym">
+      </a>
+      <a class="main-header__contact-number-link" href="tel:88005555555">8 800 555-55-55</a>
+    </header>
+
+    <main class="main-container">
+      <h1 class="visually-hidden">Supergym - твой фитнес-центр в Омске</h1>
+
+      <section class="season-ticket">
+        <div class="season-ticket__wrapper"> <!-- wrapper для центрирования -->
+          <h2 class="visually-hidden">Покупка абонемента</h2>
+          <p class="season-ticket__description">Тренажёрный зал<br>Групповые занятия<br>Кардио-зона</p>
+          <div class="season-ticket__buy">
+            <span>Омск</span>
+            <span>ФИТНЕС ЦЕНТР</span>
+            <button type="button">Купить абонемент</button>
+          </div>
+          <img class="season-ticket__image" src="img/hero.jpg" width="500" height="524" alt="С нами ты станешь Суперменом!">
+        </div>
+      </section>
+
+      <section class="about-us">
+        <div class="about-us__wrapper">
+          <h2 class="section-header">Тренажёрный зал</h2>
+          <span class="about-us__subtitle">Просторный зал площадью 900 кв/м</span>
+          <p class="about-us__description">Supergym – самый большой фитнес центр за Уралом<br>и идеальное место для укрепления тела и здоровья.<br>Тренажёрный зал оснащён всем необходимым<br>современным оборудованием для всех спортсменов.</p>
+          <p class="about-us__description">В зале расположены отдельная зона для Crossfit<br>и кардио-зона с 40 тренажёрами. Также в фитнес<br>центре есть несколько оборудованных залов<br>для различных видов групповых занятий.</p>
+        </div>
+        <img class="about-us__image" src="img/gym.jpg" width="660" height="400" alt="Наш тренажёрный зал">
+        <span>ТУТ ДОЛЖНО БЫТЬ ВИДЕО</span>
+      </section>
+
+  <section class="season-tickets-types">
+    <h2 class="section-header">Абонементы</h2>
+    <div class="season-tickets-types__wrapper">
+<!-- А это табы, а не слайдер... -->
+      <ol class="season-tickets-types__slider">
+        <li class="season-tickets-types__slider-item">
+          <button class="season-tickets-types__slider-button season-tickets-types__slider-button--current" type="button">1 месяц</button>
+        </li>
+        <li class="season-tickets-types__slider-item">
+          <button class="season-tickets-types__slider-button" type="button">6 месяцев</button>
+        </li>
+        <li class="season-tickets-types__slider-item">
+          <button class="season-tickets-types__slider-button" type="button">12 месяцев</button>
+        </li>
+      </ol>
+
+      <div class="season-tickets-types__first-block">
+        <div class="season-tickets-types__card">
+          <h3 class="season-tickets-types__title">С тренером</h3>
+          <span class="season-tickets-types__description">12 занятий</span>
+          <b class="season-tickets-types__price">5000</b>
+          <button class="season-tickets-types__button" type="button">Купить абонемент</button>
+        </div>
+
+        <div class="season-tickets-types__card">
+          <h3 class="season-tickets-types__title">Дневной</h3>
+          <span class="season-tickets-types__description">с 8:00 до 17:00</span>
+          <b class="season-tickets-types__price">1700</b>
+          <button class="season-tickets-types__button" type="button">Купить абонемент</button>
+        </div>
+
+        <div class="season-tickets-types__card">
+          <h3 class="season-tickets-types__title">Полный день</h3>
+          <span class="season-tickets-types__description">с 8:00 до 22:00</span>
+          <b class="season-tickets-types__price">2700</b>
+          <button class="season-tickets-types__button" type="button">Купить абонемент</button>
+        </div>
+      </div>
+
+      <div class="season-tickets-types__second-block">
+        <div class="season-tickets-types__card">
+          <h3 class="season-tickets-types__title">С тренером</h3>
+          <span class="season-tickets-types__description">12 занятий</span>
+          <b class="season-tickets-types__price">30 000</b>
+          <button class="season-tickets-types__button" type="button">Купить абонемент</button>
+        </div>
+
+        <div class="season-tickets-types__card">
+          <h3 class="season-tickets-types__title">Дневной</h3>
+          <span class="season-tickets-types__description">с 8:00 до 17:00</span>
+          <b class="season-tickets-types__price">10 200</b>
+          <button class="season-tickets-types__button" type="button">Купить абонемент</button>
+        </div>
+
+        <div class="season-tickets-types__card">
+          <h3 class="season-tickets-types__title">Полный день</h3>
+          <span class="season-tickets-types__description">с 8:00 до 22:00</span>
+          <b class="season-tickets-types__price">16 200</b>
+          <button class="season-tickets-types__button" type="button">Купить абонемент</button>
+        </div>
+      </div>
+
+      <div class="season-tickets-types__third-block">
+        <div class="season-tickets-types__card">
+          <h3 class="season-tickets-types__title">С тренером</h3>
+          <span class="season-tickets-types__description">12 занятий</span>
+          <b class="season-tickets-types__price">60 000</b>
+          <button class="season-tickets-types__button" type="button">Купить абонемент</button>
+        </div>
+
+        <div class="season-tickets-types__card">
+          <h3 class="season-tickets-types__title">Дневной</h3>
+          <span class="season-tickets-types__description">с 8:00 до 17:00</span>
+          <b class="season-tickets-types__price">20 400</b>
+          <button class="season-tickets-types__button" type="button">Купить абонемент</button>
+        </div>
+
+        <div class="season-tickets-types__card">
+          <h3 class="season-tickets-types__title">Полный день</h3>
+          <span class="season-tickets-types__description">с 8:00 до 22:00</span>
+          <b class="season-tickets-types__price">32 400</b>
+          <button class="season-tickets-types__button" type="button">Купить абонемент</button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+  </section>
+
+    </main>
+
+    <footer>
+      <a class="logo">
+        <!-- повторяется в футере, поэтому - блок -->
+        <img class="logo__image" src="img/logo.svg" width="130" height="26" alt="Supergym">
+      </a>
+      <nav>
+
+      </nav>
+
+      <ul social-list>
+
+      </ul>
+    </footer>
+
+
     <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
+    </svg> -->
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
+    <!-- <div data-test="hero">hero</div>
     <div data-test="about">about</div>
     <div data-test="price">price</div>
     <div data-test="games">games</div>
@@ -25,7 +172,7 @@
     <div data-test="faq">faq</div>
     <div data-test="reviews">reviews</div>
     <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    <div data-test="footer">footer</div> -->
     <script type="module" src="js/main.js"></script>
   </body>
 
