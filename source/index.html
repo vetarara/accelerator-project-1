@@ -16,10 +16,8 @@
 
   <body class="page__body">
     <header class="main-header">
-      <a class="logo">
-        <!-- повторяется в футере, поэтому - блок -->
-        <img class="logo__image" src="img/logo.svg" width="130" height="26" alt="Supergym">
-      </a>
+      <!-- Логотип никуда не ссылается и не обновляет страницу. -->
+      <img class="logo" src="img/logo.svg" width="130" height="26" alt="Supergym">
       <a class="main-header__contact-number-link" href="tel:88005555555">8 800 555-55-55</a>
     </header>
 
@@ -33,119 +31,545 @@
           <div class="season-ticket__buy">
             <span>Омск</span>
             <span>ФИТНЕС ЦЕНТР</span>
-            <button type="button">Купить абонемент</button>
+            <a href="#price">Купить абонемент</a>
           </div>
           <img class="season-ticket__image" src="img/hero.jpg" width="500" height="524" alt="С нами ты станешь Суперменом!">
         </div>
       </section>
 
-      <section class="about-us">
-        <div class="about-us__wrapper">
+      <section class="about">
+        <div class="about__wrapper">
           <h2 class="section-header">Тренажёрный зал</h2>
-          <span class="about-us__subtitle">Просторный зал площадью 900 кв/м</span>
-          <p class="about-us__description">Supergym – самый большой фитнес центр за Уралом<br>и идеальное место для укрепления тела и здоровья.<br>Тренажёрный зал оснащён всем необходимым<br>современным оборудованием для всех спортсменов.</p>
-          <p class="about-us__description">В зале расположены отдельная зона для Crossfit<br>и кардио-зона с 40 тренажёрами. Также в фитнес<br>центре есть несколько оборудованных залов<br>для различных видов групповых занятий.</p>
+          <span class="about__subtitle">Просторный зал площадью 900 кв/м</span>
+          <p>Supergym – самый большой фитнес центр за Уралом<br>и идеальное место для укрепления тела и здоровья.<br>Тренажёрный зал оснащён всем необходимым<br>современным оборудованием для всех спортсменов.</p>
+          <p>В зале расположены отдельная зона для Crossfit<br>и кардио-зона с 40 тренажёрами. Также в фитнес<br>центре есть несколько оборудованных залов<br>для различных видов групповых занятий.</p>
+          <!-- На два параграфа выше нельзя вещать класс -->
         </div>
-        <img class="about-us__image" src="img/gym.jpg" width="660" height="400" alt="Наш тренажёрный зал">
+        <img class="about__image" src="img/gym.jpg" width="660" height="400" alt="Наш тренажёрный зал">
         <span>ТУТ ДОЛЖНО БЫТЬ ВИДЕО</span>
       </section>
 
-  <section class="season-tickets-types">
-    <h2 class="section-header">Абонементы</h2>
-    <div class="season-tickets-types__wrapper">
-<!-- А это табы, а не слайдер... -->
-      <ol class="season-tickets-types__slider">
-        <li class="season-tickets-types__slider-item">
-          <button class="season-tickets-types__slider-button season-tickets-types__slider-button--current" type="button">1 месяц</button>
-        </li>
-        <li class="season-tickets-types__slider-item">
-          <button class="season-tickets-types__slider-button" type="button">6 месяцев</button>
-        </li>
-        <li class="season-tickets-types__slider-item">
-          <button class="season-tickets-types__slider-button" type="button">12 месяцев</button>
-        </li>
-      </ol>
+      <section class="price" id="price">
+        <h2 class="section-header">Абонементы</h2>
+        <div class="price__wrapper">
+          <ol class="price__tab">
+            <li class="price__tab-item">
+              <button class="price__tab-button price__tab-button--current" type="button">1 месяц</button>
+            </li>
+            <li class="price__tab-item">
+              <button class="price__tab-button" type="button">6 месяцев</button>
+            </li>
+            <li class="price__tab-item">
+              <button class="price__tab-button" type="button">12 месяцев</button>
+            </li>
+          </ol>
 
-      <div class="season-tickets-types__first-block">
-        <div class="season-tickets-types__card">
-          <h3 class="season-tickets-types__title">С тренером</h3>
-          <span class="season-tickets-types__description">12 занятий</span>
-          <b class="season-tickets-types__price">5000</b>
-          <button class="season-tickets-types__button" type="button">Купить абонемент</button>
+          <div class="price__first-block price__first-block--current">
+            <div class="price__card">
+              <h3 class="price__title">С тренером</h3>
+              <span class="price__description">12 занятий</span>
+              <b class="price__price">5000</b>
+              <a class="price__button" href="#">Купить абонемент</a>
+            </div>
+
+            <div class="price__card">
+              <h3 class="price__title">Дневной</h3>
+              <span class="price__description">с 8:00 до 17:00</span>
+              <b class="price__price">1700</b>
+              <a class="price__button" href="#">Купить абонемент</a>
+            </div>
+
+            <div class="price__card">
+              <h3 class="price__title">Полный день</h3>
+              <span class="price__description">с 8:00 до 22:00</span>
+              <b class="price__price">2700</b>
+              <a class="price__button" href="#">Купить абонемент</a>
+            </div>
+          </div>
+
+          <div class="price__second-block">
+            <div class="price__card">
+              <h3 class="price__title">С тренером</h3>
+              <span class="price__description">12 занятий</span>
+              <b class="price__price">30 000</b>
+              <a class="price__button" href="#">Купить абонемент</a>
+            </div>
+
+            <div class="price__card">
+              <h3 class="price__title">Дневной</h3>
+              <span class="price__description">с 8:00 до 17:00</span>
+              <b class="price__price">10 200</b>
+              <a class="price__button" href="#">Купить абонемент</a>
+            </div>
+
+            <div class="price__card">
+              <h3 class="price__title">Полный день</h3>
+              <span class="price__description">с 8:00 до 22:00</span>
+              <b class="price__price">16 200</b>
+              <a class="price__button" href="#">Купить абонемент</a>
+            </div>
+          </div>
+
+          <div class="price__third-block">
+            <div class="price__card">
+              <h3 class="price__title">С тренером</h3>
+              <span class="price__description">12 занятий</span>
+              <b class="price__price">60 000</b>
+              <a class="price__button" href="#">Купить абонемент</a>
+            </div>
+
+            <div class="price__card">
+              <h3 class="price__title">Дневной</h3>
+              <span class="price__description">с 8:00 до 17:00</span>
+              <b class="price__price">20 400</b>
+              <a class="price__button" href="#">Купить абонемент</a>
+            </div>
+
+            <div class="price__card">
+              <h3 class="price__title">Полный день</h3>
+              <span class="price__description">с 8:00 до 22:00</span>
+              <b class="price__price">32 400</b>
+              <a class="price__button" href="#">Купить абонемент</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="games">
+        <div class="games__wrapper">
+          <h2 class="visually-hidden">Cоревнования по CrossFit</h2>
+          <div class="games__description">
+            <span>SUPER<br>GAMES</span>
+            <dl class="games__info">
+              <dt>Дата</dt>
+              <dd><span>7</span>Марта<br>2019</dd>
+              <dt>Время</dt>
+              <dd>12:00</dd>
+            </dl>
+            <p>Ежегодные соревнования по CrossFit</p>
+          </div>
+          <img class="games__image" src="img/games.jpg" width="660" height="500" alt="Магнезия фонтаном летит от удара спортсмена!">
+        </div>
+      </section>
+
+      <section class="juri">
+        <h2 class="section-header">Жюри</h2>
+        <div class="juri__wrapper">
+          <button class="juri__button slider-prev" type="button">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <button class="juri__button slider-next" type="button">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
+
+          <ol class="slider">
+            <!-- Вёрстка и оживление минимум восьми слайдов — обязательна. Я наверстала 9 слайдов. -->
+            <!-- Не добавляю фотографиям alt, так как тут есть имена тренеров -->
+            <li class="slider__item">
+              <img class="slider__image" src="#" width="260" height="300">
+              <div class="slider__description">Анна Павлова</div>
+              <div class="slider__description--hover-focus">
+                <h3>Анна Павлова</h3>
+                <p>CrossFit</p>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата<br>России по CrossFit</li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="slider__item">
+              <img class="slider__image" src="#" width="260" height="300">
+              <div class="slider__description">Алексей Лавров</div>
+              <div class="slider__description--hover-focus">
+                <h3>Алексей Лавров</h3>
+                <p>CrossFit</p>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата<br>России по CrossFit</li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="slider__item">
+              <img class="slider__image" src="#" width="260" height="300">
+              <div class="slider__description">Александр Пашков</div>
+              <div class="slider__description--hover-focus">
+                <h3>Александр Пашков</h3>
+                <p>CrossFit</p>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата<br>России по CrossFit</li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="slider__item">
+              <img class="slider__image" src="#" width="260" height="300">
+              <div class="slider__description">Мария Кетова</div>
+              <div class="slider__description--hover-focus">
+                <h3>Мария Кетова</h3>
+                <p>CrossFit</p>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата<br>России по CrossFit</li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="slider__item">
+              <img class="slider__image" src="#" width="260" height="300">
+              <div class="slider__description">Жанет Дженкинс</div>
+              <div class="slider__description--hover-focus">
+                <h3>Жанет Дженкинс</h3>
+                <p>CrossFit</p>
+                <ul>
+                  <li>Тренировала певицу Pink</li>
+                  <li>Author of "The Hollywood Trainer Weight-Loss Plan - 21 Days to Make Healthy Living a Lifetime Habit"</li>
+                  <li>Тренирует с 1997</li>
+                </ul>
+              </div>
+            </li>
+            <li class="slider__item">
+              <img class="slider__image" src="#" width="260" height="300">
+              <div class="slider__description">Алёша Попович</div>
+              <div class="slider__description--hover-focus">
+                <h3>Алёша Попович</h3>
+                <p>CrossFit</p>
+                <ul>
+                  <li>Могучий богатырь</li>
+                  <li>Победил<br>Тугарина Змея</li>
+                  <li>Говорит с конём?..</li>
+                </ul>
+              </div>
+            </li>
+            <li class="slider__item">
+              <img class="slider__image" src="#" width="260" height="300">
+              <div class="slider__description">Иван Поддубный</div>
+              <div class="slider__description--hover-focus">
+                <h3>Иван Поддубный</h3>
+                <p>CrossFit</p>
+                <ul>
+                  <li>В его честь назван парк в Ейске!</li>
+                  <li>У него были единичные поражения в схватках,<br>но он не проиграл ни одного соревнования</li>
+                  <li>Опыт — 40 лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="slider__item">
+              <img class="slider__image" src="#" width="260" height="300">
+              <div class="slider__description">Тимоти Голви</div>
+              <div class="slider__description--hover-focus">
+                <h3>Тимоти Голви</h3>
+                <p>Бизнес-коуч и теннисист</p>
+                <ul>
+                  <li>Был капитаном теннисной команды в Гарвардском университете</li>
+                  <li>Так что может и теннису потренировать!</li>
+                  <li>Автор книги "Внутренняя игра в теннис"</li>
+                </ul>
+              </div>
+            </li>
+            <li class="slider__item">
+              <img class="slider__image" src="#" width="260" height="300">
+              <div class="slider__description">Кот Бегемот</div>
+              <div class="slider__description--hover-focus">
+                <h3>Кот Бегемот</h3>
+                <p>Шут Воланда</p>
+                <ul>
+                  <li>Не шалит</li>
+                  <li>Никого не трогает</li>
+                  <li>Починяет примус</li>
+                </ul>
+              </div>
+            </li>
+        </div>
+      </section>
+
+      <section class="features">
+        <h2 class="section-header">Наши преимущества</h2>
+        <div class="features__wrapper">
+          <div class="features__part">
+            <div>
+              <!-- На этот див нельзя вешать класс. -->
+               <dl>
+                <dt>
+                  <span class="features__in-numbers">900</span>
+                  <span class="features__in-nubers-unit">кв/м</span>
+                </dt>
+                <dd>
+                  <span class="features__in-numbers">Площадь</span>
+                  <span class="features__in-numbers">Занимайтесь без очередей<br>и толкучки</span>
+                </dd>
+              </dl>
+            </div>
+            <div>
+              <!-- На этот див нельзя вешать класс. -->
+               <dl>
+                <dt>
+                  <span class="features__in-numbers">70</span>
+                  <span class="features__in-nubers-unit">машин</span>
+                </dt>
+                <dd>
+                  <span class="features__in-numbers">Собственная парковка</span>
+                  <span class="features__in-numbers">Вы всегда найдёте место<br>для своей машины на нашей<br>парковке</span>
+                </dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="features__part">
+            <div>
+              <!-- На этот див нельзя вешать класс. -->
+               <dl>
+                <dt>
+                  <span class="features__in-numbers">350</span>
+                  <span class="features__in-nubers-unit">мест</span>
+                </dt>
+                <dd>
+                  <span class="features__in-numbers">Комфорт</span>
+                  <span class="features__in-numbers">Просторные раздевалки,<br>душевые, фен, Wi-Fi, кулеры</span>
+                </dd>
+              </dl>
+            </div>
+            <div>
+              <!-- На этот див нельзя вешать класс. -->
+               <dl>
+                <dt>
+                  <span class="features__in-numbers">5+</span>
+                  <span class="features__in-nubers-unit">лет</span>
+                </dt>
+                <dd>
+                  <span class="features__in-numbers">Тренерский опыт</span>
+                  <span class="features__in-numbers">Добивайтесь своих целей<br>быстрее с профессиональным<br>тренером</span>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div class="features__main">
+          <!-- На dl нельзя вешать класс? Или тут появится ещё один див, на который его нельзя будет вешать -->
+          <dl>
+            <dt>
+              <span class="features__in-numbers">100</span>
+              <span class="features__in-nubers-unit">Тренажёров</span>
+            </dt>
+            <dd>
+              <span class="features__in-numbers">Современные тренажёры на все группы<br>мышц</span>
+            </dd>
+          </dl>
+        </div>
+      </section>
+
+      <section class="offers">
+        <h2 class="section-header">Акции</h2>
+        <div class="offers__wrapper">
+          <div class="offers__main">
+            <div class="offers__main-description">
+              <div>
+                <!-- Этому диву нельзя давать класс -->
+                <span>Год</span>
+                <h3>4999</h3>
+                <p>Безлимитный абонемент<br>в тренажёрный зал</p>
+              </div>
+              <a href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <img class="offers__image" src="#" width="280" height="460" alt="Счастливая девушка в спортивном костюме">
+          </div>
+
+          <div>
+            <div class="offers__extra">
+              <div>
+                <!-- Этому диву нельзя давать класс -->
+                <h3>Месяц бесплатно</h3>
+                <p>Приведи друга, получи абонемент в подарок</p>
+              </div>
+              <a href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="offers__extra">
+              <div>
+                <!-- Этому диву нельзя давать класс -->
+                <h3>Скидка 20%</h3>
+                <p>Корпоративный фитнес с командой</p>
+              </div>
+              <a href="#">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
         </div>
 
-        <div class="season-tickets-types__card">
-          <h3 class="season-tickets-types__title">Дневной</h3>
-          <span class="season-tickets-types__description">с 8:00 до 17:00</span>
-          <b class="season-tickets-types__price">1700</b>
-          <button class="season-tickets-types__button" type="button">Купить абонемент</button>
+      </section>
+
+      <section class="faq">
+        <h2 class="section-header">Вопросы и ответы</h2>
+        <div class="faq__wrapper">
+          <div class="faq__buttons">
+            <button class="faq__button faq__button--current" type="button">Центр</button>
+            <button class="faq__button" type="button">Абонемент</button>
+            <button class="faq__button" type="button">Услуги</button>
+            <button class="faq__button" type="button">Правила</button>
+          </div>
+
+          <div class="faq__center faq__group--current">
+            <div class="center__first-group">
+              <input type="checkbox" id="center-first-group" name="center-faq-group">
+              <label for="center-first-group"">Как стать членом фитнес-центра?</label>
+              <section>При первом посещении и покупке абонемента, необходимо заполнить анкету<br>
+                и подписать договор. При покупке абонемента онлайн, анкета также заполняется<br>
+                онлайн и договор придёт вам на почту.
+              </section>
+            </div>
+
+            <div class="center__second-group">
+              <input type="checkbox" id="center-second-group" name="center-group">
+              <label for="center-second-group">Где можно посмотреть расписание?</label>
+              <section>Вы можете ознакомиться с расписание на стойке информации, на нашем официальном<br>
+                сайте. Так же есть возможность оформить подписку на наши новости и получать<br>
+                расписание и обновления на почту каждую неделю.
+              </section>
+            </div>
+
+            <div class="center__third-group">
+              <input type="checkbox" id="center-third-group" name="center-group">
+              <label for="center-third-group">Есть кулеры в центре? Предоставляются полотенца?</label>
+              <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br>
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br>
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </section>
+            </div>
+
+            <div class="center__fourth-group">
+              <input type="checkbox" id="center-fourth-group" name="center-group">
+              <label for="center-fourth-group">Сколько тренеров работает в клубе и какова их квалификация?</label>
+              <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br>
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br>
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </section>
+            </div>
+          </div>
+
+          <div class="faq__season-ticket">
+            <div class="season-ticket__first-group">
+              <input type="checkbox" id="season-ticket-first-group" name="season-ticket-group">
+              <label for="season-ticket-first-group"">Занятия с тренером входят в абонемент?</label>
+              <section>При посещении тренажерного зала вам необходимо оплатить занятия с тренером<br>
+                отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,<br>
+                получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+              </section>
+            </div>
+
+            <div class="season-ticket__second-group">
+              <input type="checkbox" id="season-ticket-second-group" name="season-ticket-group">
+              <label for="season-ticket-second-group">Можно ли заморозить абонемент?</label>
+              <section>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore<br>
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in<br>
+                culpa qui officia deserunt mollit anim id est laborum.
+              </section>
+            </div>
+
+            <div class="season-ticket__third-group">
+              <input type="checkbox" id="season-ticket-third-group" name="season-ticket-group">
+              <label for="season-ticket-third-group">Есть ли лимит по посещениям тренажерного зала и групповых занятий?</label>
+              <section>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium<br>
+                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore<br>
+                veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              </section>
+            </div>
+
+            <div class="season-ticket__fourth-group">
+              <input type="checkbox" id="season-ticket-fourth-group" name="season-ticket-group">
+              <label for="season-ticket-fourth-group">Что такое семейный доступ и доступ для друзей?</label>
+              <section>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut<br>
+                fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem<br>
+                sequi nesciunt.
+              </section>
+            </div>
+          </div>
+
+          <div class="faq__services">
+            <div class="services__first-group">
+              <input type="checkbox" id="services-first-group" name="services-group">
+              <label for="services-first-group"">Предлагает ли клуб услуги<br>
+                по консультированию по вопросам питания?</label>
+              <section>Да. Вы можете обратиться как к своему тренеру, так и к нашему<br>
+                нутрициологу. Специалист уточнит ваши данные, цели и предложит<br>
+                программу питания.
+              </section>
+            </div>
+
+            <div class="services__second-group">
+              <input type="checkbox" id="services-second-group" name="services-group">
+              <label for="services-second-group">Проводятся ли в клубе какие-либо мероприятия или соревнования?</label>
+              <section>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore<br>
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in<br>
+                culpa qui officia deserunt mollit anim id est laborum.
+              </section>
+            </div>
+
+            <div class="services__third-group">
+              <input type="checkbox" id="services-third-group" name="services-group">
+              <label for="services-third-group">Можно ли приобрести в центре спортивное питание?</label>
+              <section>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium<br>
+                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore<br>
+                veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              </section>
+            </div>
+
+            <div class="services__fourth-group">
+              <input type="checkbox" id="services-fourth-group" name="services-group">
+              <label for="services-fourth-group">Есть ли в центре детская комната?</label>
+              <section>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut<br>
+                fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem<br>
+                sequi nesciunt.
+              </section>
+            </div>
+          </div>
+
+          <div class="faq__rules">
+            <div class="rules__first-group">
+              <input type="checkbox" id="rules-first-group" name="rules-group">
+              <label for="rules-first-group"">Есть в фитнес-центре дресс-код?</label>
+              <section>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную<br>
+                обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте<br>
+                футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности,<br>
+                запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п.,<br>
+                исключения составляют специальные классы (например, йога, пилатес).
+              </section>
+            </div>
+
+            <div class="rules__second-group">
+              <input type="checkbox" id="rules-second-group" name="rules-group">
+              <label for="rules-second-group">Можно ли приводить с собой детей на тренировки?</label>
+              <section>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore<br>
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in<br>
+                culpa qui officia deserunt mollit anim id est laborum.
+              </section>
+            </div>
+
+            <div class="rules__third-group">
+              <input type="checkbox" id="rules-third-group" name="rules-group">
+              <label for="rules-third-group">Какие дополнительные правила посещения центра?</label>
+              <section>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium<br>
+                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore<br>
+                veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              </section>
+            </div>
+
+            <div class="rules__fourth-group">
+              <input type="checkbox" id="rules-fourth-group" name="rules-group">
+              <label for="rules-fourth-group">Нужна ли медицинская справка для посещения залов и бассейна?</label>
+              <section>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut<br>
+                fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem<br>
+                sequi nesciunt.
+              </section>
+            </div>
+          </div>
         </div>
-
-        <div class="season-tickets-types__card">
-          <h3 class="season-tickets-types__title">Полный день</h3>
-          <span class="season-tickets-types__description">с 8:00 до 22:00</span>
-          <b class="season-tickets-types__price">2700</b>
-          <button class="season-tickets-types__button" type="button">Купить абонемент</button>
-        </div>
-      </div>
-
-      <div class="season-tickets-types__second-block">
-        <div class="season-tickets-types__card">
-          <h3 class="season-tickets-types__title">С тренером</h3>
-          <span class="season-tickets-types__description">12 занятий</span>
-          <b class="season-tickets-types__price">30 000</b>
-          <button class="season-tickets-types__button" type="button">Купить абонемент</button>
-        </div>
-
-        <div class="season-tickets-types__card">
-          <h3 class="season-tickets-types__title">Дневной</h3>
-          <span class="season-tickets-types__description">с 8:00 до 17:00</span>
-          <b class="season-tickets-types__price">10 200</b>
-          <button class="season-tickets-types__button" type="button">Купить абонемент</button>
-        </div>
-
-        <div class="season-tickets-types__card">
-          <h3 class="season-tickets-types__title">Полный день</h3>
-          <span class="season-tickets-types__description">с 8:00 до 22:00</span>
-          <b class="season-tickets-types__price">16 200</b>
-          <button class="season-tickets-types__button" type="button">Купить абонемент</button>
-        </div>
-      </div>
-
-      <div class="season-tickets-types__third-block">
-        <div class="season-tickets-types__card">
-          <h3 class="season-tickets-types__title">С тренером</h3>
-          <span class="season-tickets-types__description">12 занятий</span>
-          <b class="season-tickets-types__price">60 000</b>
-          <button class="season-tickets-types__button" type="button">Купить абонемент</button>
-        </div>
-
-        <div class="season-tickets-types__card">
-          <h3 class="season-tickets-types__title">Дневной</h3>
-          <span class="season-tickets-types__description">с 8:00 до 17:00</span>
-          <b class="season-tickets-types__price">20 400</b>
-          <button class="season-tickets-types__button" type="button">Купить абонемент</button>
-        </div>
-
-        <div class="season-tickets-types__card">
-          <h3 class="season-tickets-types__title">Полный день</h3>
-          <span class="season-tickets-types__description">с 8:00 до 22:00</span>
-          <b class="season-tickets-types__price">32 400</b>
-          <button class="season-tickets-types__button" type="button">Купить абонемент</button>
-        </div>
-      </div>
-    </div>
-
-    <div>
-  </section>
-
+      </section>
     </main>
 
     <footer>
-      <a class="logo">
-        <!-- повторяется в футере, поэтому - блок -->
-        <img class="logo__image" src="img/logo.svg" width="130" height="26" alt="Supergym">
-      </a>
+
+        <img class="logo" src="img/logo.svg" width="130" height="26" alt="Supergym">
+
       <nav>
 
       </nav>
