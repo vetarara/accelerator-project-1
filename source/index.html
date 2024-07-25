@@ -30,7 +30,7 @@
           <p class="season-ticket__description">Тренажёрный зал<br>Групповые занятия<br>Кардио-зона</p>
           <div class="season-ticket__buy">
             <span>Омск</span>
-            <span>ФИТНЕС ЦЕНТР</span>
+            <h3>ФИТНЕС<br>ЦЕНТР</h3>
             <a href="#price">Купить абонемент</a>
           </div>
           <img class="season-ticket__image" src="img/hero.jpg" width="500" height="524" alt="С нами ты станешь Суперменом!">
@@ -139,13 +139,11 @@
         <div class="games__wrapper">
           <h2 class="visually-hidden">Cоревнования по CrossFit</h2>
           <div class="games__description">
-            <span>SUPER<br>GAMES</span>
-            <dl class="games__info">
-              <dt>Дата</dt>
-              <dd><span>7</span>Марта<br>2019</dd>
-              <dt>Время</dt>
-              <dd>12:00</dd>
-            </dl>
+            <h3>SUPER<br>GAMES</h3>
+            <p>Дата</p>
+            <time datetime="2019-03-07"><b>7</b>Марта<br>2019</time>
+            <p>Время</p>
+            <time datetime="2019-03-07T12:00">12:00</time>
             <p>Ежегодные соревнования по CrossFit</p>
           </div>
           <img class="games__image" src="img/games.jpg" width="660" height="500" alt="Магнезия фонтаном летит от удара спортсмена!">
@@ -154,22 +152,22 @@
 
       <section class="juri">
         <h2 class="section-header">Жюри</h2>
-        <div class="juri__wrapper">
-          <button class="juri__button slider-prev" type="button">
+        <div class="juri__wrapper slider">
+          <button class="juri__button slider__button-prev" type="button">
             <span class="visually-hidden">Предыдущее фото</span>
           </button>
-          <button class="juri__button slider-next" type="button">
+          <button class="juri__button slider__button-next" type="button">
             <span class="visually-hidden">Следующее фото</span>
           </button>
 
-          <ol class="juri-slider">
+          <ol class="juri__list slider__list">
             <!-- Вёрстка и оживление минимум восьми слайдов — обязательна. Я наверстала 9 слайдов. -->
             <!-- Не добавляю фотографиям alt, так как тут есть имена тренеров -->
              <!-- Такие же кнопки в слайдере в разделе "отзывы" -->
-            <li class="juri-slider__item">
-              <img class="juri-slider__image" src="#" width="260" height="300">
-              <p class="juri-slider__description">Анна Павлова</p>
-              <div class="juri-slider__description--hover-focus">
+            <li class="juri__item slider__item">
+              <img class="juri__image" src="#" width="260" height="300">
+              <p class="juri__description">Анна Павлова</p>
+              <div class="juri__description--hover-focus">
                 <h3>Анна Павлова</h3>
                 <p>CrossFit</p>
                 <ul>
@@ -179,10 +177,10 @@
                 </ul>
               </div>
             </li>
-            <li class="juri-slider__item">
-              <img class="juri-slider__image" src="#" width="260" height="300">
-              <p class="juri-slider__description">Алексей Лавров</p>
-              <div class="juri-slider__description--hover-focus">
+            <li class="juri__item slider__item">
+              <img class="juri__image" src="#" width="260" height="300">
+              <p class="juri__description">Алексей Лавров</p>
+              <div class="juri__description--hover-focus">
                 <h3>Алексей Лавров</h3>
                 <p>CrossFit</p>
                 <ul>
@@ -192,10 +190,10 @@
                 </ul>
               </div>
             </li>
-            <li class="juri-slider__item">
-              <img class="juri-slider__image" src="#" width="260" height="300">
-              <p class="juri-slider__description">Александр Пашков</p>
-              <div class="juri-slider__description--hover-focus">
+            <li class="juri__item slider__item">
+              <img class="juri__image" src="#" width="260" height="300">
+              <p class="juri__description">Александр Пашков</p>
+              <div class="juri__description--hover-focus">
                 <h3>Александр Пашков</h3>
                 <p>CrossFit</p>
                 <ul>
@@ -205,10 +203,10 @@
                 </ul>
               </div>
             </li>
-            <li class="juri-slider__item">
-              <img class="juri-slider__image" src="#" width="260" height="300">
-              <p class="juri-slider__description">Мария Кетова</p>
-              <div class="juri-slider__description--hover-focus">
+            <li class="juri__item slider__item">
+              <img class="juri__image" src="#" width="260" height="300">
+              <p class="juri__description">Мария Кетова</p>
+              <div class="juri__description--hover-focus">
                 <h3>Мария Кетова</h3>
                 <p>CrossFit</p>
                 <ul>
@@ -218,10 +216,10 @@
                 </ul>
               </div>
             </li>
-            <li class="juri-slider__item">
-              <img class="juri-slider__image" src="#" width="260" height="300">
-              <p class="juri-slider__description">Жанет Дженкинс</p>
-              <div class="juri-slider__description--hover-focus">
+            <li class="juri__item slider__item">
+              <img class="juri__image" src="#" width="260" height="300">
+              <p class="juri__description">Жанет Дженкинс</p>
+              <div class="juri__description--hover-focus">
                 <h3>Жанет Дженкинс</h3>
                 <p>CrossFit</p>
                 <ul>
@@ -231,10 +229,10 @@
                 </ul>
               </div>
             </li>
-            <li class="juri-slider__item">
-              <img class="juri-slider__image" src="#" width="260" height="300">
-              <p class="juri-slider__description">Алёша Попович</p>
-              <div class="juri-slider__description--hover-focus">
+            <li class="juri__item slider__item">
+              <img class="juri__image" src="#" width="260" height="300">
+              <p class="juri__description">Алёша Попович</p>
+              <div class="juri__description--hover-focus">
                 <h3>Алёша Попович</h3>
                 <p>CrossFit</p>
                 <ul>
@@ -244,10 +242,10 @@
                 </ul>
               </div>
             </li>
-            <li class="juri-slider__item">
-              <img class="juri-slider__image" src="#" width="260" height="300">
-              <p class="juri-slider__description">Иван Поддубный</p>
-              <div class="juri-slider__description--hover-focus">
+            <li class="juri__item slider__item">
+              <img class="juri__image" src="#" width="260" height="300">
+              <p class="juri__description">Иван Поддубный</p>
+              <div class="juri__description--hover-focus">
                 <h3>Иван Поддубный</h3>
                 <p>CrossFit</p>
                 <ul>
@@ -257,10 +255,10 @@
                 </ul>
               </div>
             </li>
-            <li class="juri-slider__item">
-              <img class="juri-slider__image" src="#" width="260" height="300">
-              <p class="juri-slider__description">Тимоти Голви</p>
-              <div class="juri-slider__description--hover-focus">
+            <li class="juri__item slider__item">
+              <img class="juri__image" src="#" width="260" height="300">
+              <p class="juri__description">Тимоти Голви</p>
+              <div class="juri__description--hover-focus">
                 <h3>Тимоти Голви</h3>
                 <p>Бизнес-коуч и теннисист</p>
                 <ul>
@@ -270,10 +268,10 @@
                 </ul>
               </div>
             </li>
-            <li class="juri-slider__item">
-              <img class="juri-slider__image" src="#" width="260" height="300">
-              <p class="juri-slider__description">Кот Бегемот</p>
-              <div class="juri-slider__description--hover-focus">
+            <li class="juri__item slider__item">
+              <img class="juri__image" src="#" width="260" height="300">
+              <p class="juri__description">Кот Бегемот</p>
+              <div class="juri__description--hover-focus">
                 <h3>Кот Бегемот</h3>
                 <p>Шут Воланда</p>
                 <ul>
@@ -568,62 +566,68 @@
 
       <section class="reviews">
         <h2 class="section-header">Отзывы</h2>
-        <div class="reviews__wrapper">
+        <div class="reviews__wrapper slider">
           <!-- Обязательны вёрстка и оживление минимум двух слайдов. Я сделаю три-->
            <!-- Кнопки те же, что в разделе "жюри", кстати -->
-          <button class="reviews__button slider-prev" type="button">
+          <button class="reviews__button slider__button-prev" type="button">
             <span class="visually-hidden">Предыдущее фото</span>
           </button>
-          <button class="reviews__button slider-next" type="button">
+          <button class="reviews__button slider__button-next" type="button">
             <span class="visually-hidden">Следующее фото</span>
           </button>
 
-          <ol>
-            <li>
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item">
               <div>
                 <!-- На див нельзя вешать класс -->
-                <img class="" width="80" height="80">
-                <h3>Анна Орлова</h3>
-                <p>«Хожу в Supergym уже больше года. Нравится,<br>
-                  что в клубе всегда чисто, тренажёры обновляют,<br>
-                  персонал дружелюбный. Зал просторный,<br>
-                  даже в вечернее время нет очередей»</p>
+                <img class="reviews__avatar" width="80" height="80">
+                <div class="reviews__author-info">
+                  <cite class="reviews__author-name">Анна Орлова</cite>
+                  <p class="reviews__text">«Хожу в Supergym уже больше года. Нравится,<br>
+                    что в клубе всегда чисто, тренажёры обновляют,<br>
+                    персонал дружелюбный. Зал просторный,<br>
+                    даже в вечернее время нет очередей»</p>
+                </div>
               </div>
-            </li>
-            <li>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
               <div>
                 <!-- На див нельзя вешать класс -->
-                <img class="" width="80" height="80">
-                <h3>Абдурахмангаджи Тестович-Многотестирующий</h3>
-                <p>«Sed ut perspiciatis unde omnis iste natus<br>
-                  error sit voluptatem accusantium doloremque<br>
-                  laudantium, totam rem aperiam, eaque ipsa<br>
-                  quae ab illo inventore veritatis et quasi<br>
-                  architecto beatae vitae dicta sunt<br>
-                  explicabo. Nemo enim ipsam voluptatem<br>
-                  quia voluptas sit aspernatur aut odit aut<br>
-                  fugit, sed quia consequuntur magni<br>
-                  dolores eos qui ratione voluptatem sequi<br>
-                  nesciunt. Neque porro quisquam est, qui<br>
-                  dolorem ipsum quia dolor sit amet,<br>
-                  consectetur, adipisci velit, sed quia<br>
-                  non numquam eius modi tempora incidunt<br>
-                  ut labore et dolore magnam aliquam<br>
-                  quaerat voluptatem. Ut enim ad minima<br>
-                  veniam, quis nostrum exercitationem<br>
-                  ullam corporis suscipit laboriosam, nisi ut<br>
-                  aliquid ex ea commodi consequatur?»</p>
+                <img class="reviews__avatar" width="80" height="80">
+                <div class="reviews__author-info">
+                  <cite class="reviews__author-name">Абдурахмангаджи Тестович-Многотестирующий</cite>
+                  <p class="reviews__text">«Sed ut perspiciatis unde omnis iste natus<br>
+                    error sit voluptatem accusantium doloremque<br>
+                    laudantium, totam rem aperiam, eaque ipsa<br>
+                    quae ab illo inventore veritatis et quasi<br>
+                    architecto beatae vitae dicta sunt<br>
+                    explicabo. Nemo enim ipsam voluptatem<br>
+                    quia voluptas sit aspernatur aut odit aut<br>
+                    fugit, sed quia consequuntur magni<br>
+                    dolores eos qui ratione voluptatem sequi<br>
+                    nesciunt. Neque porro quisquam est, qui<br>
+                    dolorem ipsum quia dolor sit amet,<br>
+                    consectetur, adipisci velit, sed quia<br>
+                    non numquam eius modi tempora incidunt<br>
+                    ut labore et dolore magnam aliquam<br>
+                    quaerat voluptatem. Ut enim ad minima<br>
+                    veniam, quis nostrum exercitationem<br>
+                    ullam corporis suscipit laboriosam, nisi ut<br>
+                    aliquid ex ea commodi consequatur?»</p>
+                </div>
               </div>
-            </li>
-            <li>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
               <div>
                 <!-- На див нельзя вешать класс -->
-                <img class="" width="80" height="80">
-                <h3>Тея Сай</h3>
-                <p>«Всё ок, спс»</p>
+                <img class="reviews__avatar" width="80" height="80">
+                <div class="reviews__author-info"></div>
+                  <cite class="reviews__author-name">Тея Сай</cite>
+                  <p class="reviews__text">«Всё ок, спс»</p>
+                </div>
               </div>
-            </li>
-          </ol>
+            </blockquote>
+          </div>
         </div>
       </section>
 
@@ -650,51 +654,61 @@
         <h2 class="section-header">Контакты</h2>
         <div class="contacts__wrapper">
           <address class="">
-            <p class="contacts__header">Адрес:</p>
+            <p class="contacts__title">Адрес:</p>
             <p class="contacts__text">г. Омск, ул. 60 лет Октября, 7</p>
-            <p class="contacts__header">График работы:</p>
+            <p class="contacts__title">График работы:</p>
             <p class="contacts__text">Пн-Вс: с 8:00 до 22:00</p>
-            <p class="contacts__header">Телефон:</p>
-            <p class="contacts__text"><a class="" href="tel:+78005555555">8 800 555-55-55</a></p>
-            <p class="contacts__header">Email:</p>
-            <p class="contacts__text"><a href="mailto:oмск@supergym.ru">oмск@supergym.ru</a></p>
+            <p class="contacts__title">Телефон:</p>
+            <p class="contacts__text"><a class="contacts__phone" href="tel:+78005555555">8 800 555-55-55</a></p>
+            <p class="contacts__title">Email:</p>
+            <p class="contacts__text"><a class="contacts__email" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a></p>
           </address>
         </div>
       </section>
     </main>
 
     <footer class="main-footer">
-      <img class="logo" src="img/logo.svg" width="130" height="26" alt="Supergym">
-      <nav class="main-footer__navigation">
-        <ul>
-          <li>
-            <a class="">Услуги</a></li>
-          <li>
-            <a class="">Абонементы</a></li>
-          </li>
-          <li>
-            <a class="">Акции</a></li>
-          </li>
-          <li>
-            <a class="">Тренеры</a></li>
-          </li>
-          <li>
-            <a class="">Расписание</a></li>
-          </li>
-        </ul>
+      <div class="main-footer__wrapper">
+        <img class="logo" src="img/logo.svg" width="130" height="26" alt="Supergym">
+        <nav class="main-footer__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="">Услуги</a></li>
+            <li class="navigation__item">
+              <a class="">Абонементы</a></li>
+            </li>
+            <li class="navigation__item">
+              <a class="">Акции</a></li>
+            </li>
+            <li class="navigation__item">
+              <a class="">Тренеры</a></li>
+            </li>
+            <li class="navigation__item">
+              <a class="">Расписание</a></li>
+            </li>
+          </ul>
 
-        <ul class="main-footer__social-list">
-          <li>
-            <a class="visually-hidden">Вконтакте</a></li>
-          </li>
-          <li>
-            <a class="visually-hidden">Одноклассники</a></li>
-          </li>
-          <li>
-            <a class="visually-hidden">Reddit</a></li>
-          </li>
-        </ul>
-      </nav>
+          <ul class="main-footer__list social">
+            <li class="social__item">
+              <a class="social__link social__link--vk">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--ok">
+                <span class="visually-hidden">Одноклассники</span>
+              </a>
+            </li>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--reddit">
+                <span class="visually-hidden">Reddit</span>
+              </a>
+            </li>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </footer>
 
 
