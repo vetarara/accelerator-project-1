@@ -6,12 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUPERGYM</title>
     <link rel="stylesheet" href="sass/style.scss">
-    <style>
-      .main-header, .season-ticket {
-          /* Линейный градиент */
-          background: linear-gradient(to right, #1C3477, #1C3477, #1A3578, #73184B, #B4022A);
-      }
-  </style>
   </head>
 
   <body class="page__body">
@@ -281,6 +275,7 @@
                 </ul>
               </div>
             </li>
+          </ol>
         </div>
       </section>
 
@@ -410,7 +405,7 @@
           <div class="faq__center faq__group--current">
             <div class="center__first-group">
               <input type="checkbox" id="center-first-group" name="center-faq-group">
-              <label for="center-first-group"">Как стать членом фитнес-центра?</label>
+              <label for="center-first-group">Как стать членом фитнес-центра?</label>
               <section>При первом посещении и покупке абонемента, необходимо заполнить анкету<br>
                 и подписать договор. При покупке абонемента онлайн, анкета также заполняется<br>
                 онлайн и договор придёт вам на почту.
@@ -448,7 +443,7 @@
           <div class="faq__season-ticket">
             <div class="season-ticket__first-group">
               <input type="checkbox" id="season-ticket-first-group" name="season-ticket-group">
-              <label for="season-ticket-first-group"">Занятия с тренером входят в абонемент?</label>
+              <label for="season-ticket-first-group">Занятия с тренером входят в абонемент?</label>
               <section>При посещении тренажерного зала вам необходимо оплатить занятия с тренером<br>
                 отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,<br>
                 получить небольшую консультацию по тренажеру или технике выполнения упражнения.
@@ -486,7 +481,7 @@
           <div class="faq__services">
             <div class="services__first-group">
               <input type="checkbox" id="services-first-group" name="services-group">
-              <label for="services-first-group"">Предлагает ли клуб услуги<br>
+              <label for="services-first-group">Предлагает ли клуб услуги<br>
                 по консультированию по вопросам питания?</label>
               <section>Да. Вы можете обратиться как к своему тренеру, так и к нашему<br>
                 нутрициологу. Специалист уточнит ваши данные, цели и предложит<br>
@@ -525,7 +520,7 @@
           <div class="faq__rules">
             <div class="rules__first-group">
               <input type="checkbox" id="rules-first-group" name="rules-group">
-              <label for="rules-first-group"">Есть в фитнес-центре дресс-код?</label>
+              <label for="rules-first-group">Есть в фитнес-центре дресс-код?</label>
               <section>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную<br>
                 обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте<br>
                 футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности,<br>
@@ -621,7 +616,7 @@
               <div>
                 <!-- На див нельзя вешать класс -->
                 <img class="reviews__avatar" width="80" height="80">
-                <div class="reviews__author-info"></div>
+                <div class="reviews__author-info">
                   <cite class="reviews__author-name">Тея Сай</cite>
                   <p class="reviews__text">«Всё ок, спс»</p>
                 </div>
@@ -645,7 +640,7 @@
                 <input class="form__input" type="tel" placeholder="Телефон">
               </label>
             </p>
-            <button type="form__button" type="submit">Отправить</button>
+            <button class="form__button" type="submit">Отправить</button>
           </form>
         </div>
       </section>
@@ -675,16 +670,16 @@
             <li class="navigation__item">
               <a class="">Услуги</a></li>
             <li class="navigation__item">
-              <a class="">Абонементы</a></li>
+              <a class="">Абонементы</a>
             </li>
             <li class="navigation__item">
-              <a class="">Акции</a></li>
+              <a class="">Акции</a>
             </li>
             <li class="navigation__item">
-              <a class="">Тренеры</a></li>
+              <a class="">Тренеры</a>
             </li>
             <li class="navigation__item">
-              <a class="">Расписание</a></li>
+              <a class="">Расписание</a>
             </li>
           </ul>
 
@@ -699,12 +694,10 @@
                 <span class="visually-hidden">Одноклассники</span>
               </a>
             </li>
-            </li>
             <li class="social__item">
               <a class="social__link social__link--reddit">
                 <span class="visually-hidden">Reddit</span>
               </a>
-            </li>
             </li>
           </ul>
         </nav>
