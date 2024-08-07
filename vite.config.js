@@ -63,7 +63,7 @@ export default {
   publicDir: 'public',
   root: './source',
   build: {
-    outDir: '../dist',
+    outDir: '../docs',
   },
   base: './',
   server: {
