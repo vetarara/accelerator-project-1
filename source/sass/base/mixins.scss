@@ -1,7 +1,7 @@
-@mixin list-reset
-  margin: 0
-  padding: 0
-  list-style-type: none
-// .social__list
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}// .social__list
 //   @include list-reset
 // сначала подключаются миксины и только потом - другие свойства, иначе нужные свойства будут переопределены миксином

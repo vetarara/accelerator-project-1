@@ -4,21 +4,21 @@
 // @import "vendor/normalize";
 
 // базовые стили: шрифты, миксины, переменные
-@import "base/mixins.sass";
-@import "base/variables.sass";
-@import "base/fonts.sass";
-@import "base/visually-hidden.sass";
+@import "base/mixins";
+@import "base/variables";
+@import "base/fonts";
+@import "base/visually-hidden";
 
 // подключить сюда файлы в формате scss не удаётся, сервер начинает выдывать ошибки.
 // блоки
 @import "blocks/main-header";
-@import "blocks/season-ticket.sass";
-@import "blocks/price.sass";
-@import "blocks/games.sass";
-@import "blocks/features.sass";
-@import "blocks/offers.sass";
+@import "blocks/season-ticket";
+@import "blocks/price";
+@import "blocks/games";
+@import "blocks/features";
+@import "blocks/offers";
 @import "blocks/faq";
-@import "blocks/reviews.sass";
-@import "blocks/form.sass";
-@import "blocks/main-footer.sass";
+@import "blocks/reviews";
+@import "blocks/form";
+@import "blocks/main-footer";
 
