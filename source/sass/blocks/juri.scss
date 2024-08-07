@@ -1,0 +1,14 @@
+.juri__list {
+  display: flex;
+}
+
+.juri__item {
+  background-color: $secondary-background;
+  color: $secondary-color;
+}
+
+.juri__description {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 400;
+}

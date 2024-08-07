@@ -23,9 +23,9 @@
           <h2 class="visually-hidden">Покупка абонемента</h2>
           <p class="season-ticket__description">Тренажёрный зал<br>Групповые занятия<br>Кардио-зона</p>
           <div class="season-ticket__buy">
-            <span>Омск</span>
-            <h3>ФИТНЕС<br>ЦЕНТР</h3>
-            <a href="#price">Купить абонемент</a>
+            <span class="season-ticket__text">Омск</span>
+            <h3 class="season-ticket__title">ФИТНЕС<br>ЦЕНТР</h3>
+            <a class="season-ticket__link" href="#price">Купить абонемент</a>
           </div>
           <img class="season-ticket__image" src="img/hero.jpg" width="500" height="524" alt="С нами ты станешь Суперменом!">
         </div>
@@ -62,21 +62,24 @@
             <div class="price__card">
               <h3 class="price__title">С тренером</h3>
               <span class="price__description">12 занятий</span>
-              <b class="price__price">5000</b>
+              <p class="price__shadow">5000</p>
+              <b class="price__sum">5000</b>
               <a class="price__button" href="#">Купить абонемент</a>
             </div>
 
             <div class="price__card">
               <h3 class="price__title">Дневной</h3>
               <span class="price__description">с 8:00 до 17:00</span>
-              <b class="price__price">1700</b>
+              <p class="price__shadow">1700</p>
+              <b class="price__sum">1700</b>
               <a class="price__button" href="#">Купить абонемент</a>
             </div>
 
             <div class="price__card">
               <h3 class="price__title">Полный день</h3>
               <span class="price__description">с 8:00 до 22:00</span>
-              <b class="price__price">2700</b>
+              <p class="price__shadow">2700</p>
+              <b class="price__sum">2700</b>
               <a class="price__button" href="#">Купить абонемент</a>
             </div>
           </div>
@@ -85,21 +88,24 @@
             <div class="price__card">
               <h3 class="price__title">С тренером</h3>
               <span class="price__description">12 занятий</span>
-              <b class="price__price">30 000</b>
+              <p class="price__shadow">30 000</p>
+              <b class="price__sum">30 000</b>
               <a class="price__button" href="#">Купить абонемент</a>
             </div>
 
             <div class="price__card">
               <h3 class="price__title">Дневной</h3>
               <span class="price__description">с 8:00 до 17:00</span>
-              <b class="price__price">10 200</b>
+              <p class="price__shadow">10 200</p>
+              <b class="price__sum">10 200</b>
               <a class="price__button" href="#">Купить абонемент</a>
             </div>
 
             <div class="price__card">
               <h3 class="price__title">Полный день</h3>
               <span class="price__description">с 8:00 до 22:00</span>
-              <b class="price__price">16 200</b>
+              <p class="price__shadow">16 200</p>
+              <b class="price__sum">16 200</b>
               <a class="price__button" href="#">Купить абонемент</a>
             </div>
           </div>
@@ -108,21 +114,24 @@
             <div class="price__card">
               <h3 class="price__title">С тренером</h3>
               <span class="price__description">12 занятий</span>
-              <b class="price__price">60 000</b>
+              <p class="price__shadow">60 000</p>
+              <b class="price__sum">60 000</b>
               <a class="price__button" href="#">Купить абонемент</a>
             </div>
 
             <div class="price__card">
               <h3 class="price__title">Дневной</h3>
               <span class="price__description">с 8:00 до 17:00</span>
-              <b class="price__price">20 400</b>
+              <p class="price__shadow">20 400</p>
+              <b class="price__sum">20 400</b>
               <a class="price__button" href="#">Купить абонемент</a>
             </div>
 
             <div class="price__card">
               <h3 class="price__title">Полный день</h3>
               <span class="price__description">с 8:00 до 22:00</span>
-              <b class="price__price">32 400</b>
+              <p class="price__shadow">32 400</p>
+              <b class="price__sum">32 400</b>
               <a class="price__button" href="#">Купить абонемент</a>
             </div>
           </div>
@@ -133,12 +142,21 @@
         <div class="games__wrapper">
           <h2 class="visually-hidden">Cоревнования по CrossFit</h2>
           <div class="games__description">
-            <h3>SUPER<br>GAMES</h3>
-            <p>Дата</p>
-            <time datetime="2019-03-07"><b>7</b>Марта<br>2019</time>
-            <p>Время</p>
-            <time datetime="2019-03-07T12:00">12:00</time>
+            <div class="games__description-wrapper">
+              <h3 class="games__title">SUPER<br>GAMES</h3>
+              <div class="games__time">
+                <div>
+                   <p>Дата</p>
+                   <time datetime="2019-03-07"><b>7</b>Марта 2019</time>
+                </div>
+                <div>
+                  <p>Время</p>
+                  <time datetime="2019-03-07T12:00"><b>12:00</b></time>
+                </div>
+              </div>
+            </div>
             <p>Ежегодные соревнования по CrossFit</p>
+            <a class="games__button" href="#">Купить абонемент</a>
           </div>
           <img class="games__image" src="img/games.jpg" width="660" height="500" alt="Магнезия фонтаном летит от удара спортсмена!">
         </div>
@@ -161,9 +179,9 @@
             <li class="juri__item slider__item">
               <img class="juri__image" src="#" width="260" height="300">
               <p class="juri__description">Анна Павлова</p>
-              <div class="juri__description--hover-focus">
+              <div class="juri__description--hover-focus jury-info">
                 <h3>Анна Павлова</h3>
-                <p>CrossFit</p>
+                <p class="jury-info__sport">CrossFit</p>
                 <ul>
                   <li>Certified Level 3 Trainer</li>
                   <li>Победитель чемпионата<br>России по CrossFit</li>
@@ -176,7 +194,7 @@
               <p class="juri__description">Алексей Лавров</p>
               <div class="juri__description--hover-focus">
                 <h3>Алексей Лавров</h3>
-                <p>CrossFit</p>
+                <p class="jury-info__sport">CrossFit</p>
                 <ul>
                   <li>Certified Level 3 Trainer</li>
                   <li>Победитель чемпионата<br>России по CrossFit</li>
@@ -189,7 +207,7 @@
               <p class="juri__description">Александр Пашков</p>
               <div class="juri__description--hover-focus">
                 <h3>Александр Пашков</h3>
-                <p>CrossFit</p>
+                <p class="jury-info__sport">CrossFit</p>
                 <ul>
                   <li>Certified Level 3 Trainer</li>
                   <li>Победитель чемпионата<br>России по CrossFit</li>
@@ -202,7 +220,7 @@
               <p class="juri__description">Мария Кетова</p>
               <div class="juri__description--hover-focus">
                 <h3>Мария Кетова</h3>
-                <p>CrossFit</p>
+                <p class="jury-info__sport">CrossFit</p>
                 <ul>
                   <li>Certified Level 3 Trainer</li>
                   <li>Победитель чемпионата<br>России по CrossFit</li>
@@ -215,7 +233,7 @@
               <p class="juri__description">Жанет Дженкинс</p>
               <div class="juri__description--hover-focus">
                 <h3>Жанет Дженкинс</h3>
-                <p>CrossFit</p>
+                <p class="jury-info__sport">CrossFit</p>
                 <ul>
                   <li>Тренировала певицу Pink</li>
                   <li>Author of "The Hollywood Trainer Weight-Loss Plan - 21 Days to Make Healthy Living a Lifetime Habit"</li>
@@ -228,7 +246,7 @@
               <p class="juri__description">Алёша Попович</p>
               <div class="juri__description--hover-focus">
                 <h3>Алёша Попович</h3>
-                <p>CrossFit</p>
+                <p class="jury-info__sport">CrossFit</p>
                 <ul>
                   <li>Могучий богатырь</li>
                   <li>Победил<br>Тугарина Змея</li>
@@ -241,7 +259,7 @@
               <p class="juri__description">Иван Поддубный</p>
               <div class="juri__description--hover-focus">
                 <h3>Иван Поддубный</h3>
-                <p>CrossFit</p>
+                <p class="jury-info__sport">CrossFit</p>
                 <ul>
                   <li>В его честь назван парк в Ейске!</li>
                   <li>У него были единичные поражения в схватках,<br>но он не проиграл ни одного соревнования</li>
@@ -254,7 +272,7 @@
               <p class="juri__description">Тимоти Голви</p>
               <div class="juri__description--hover-focus">
                 <h3>Тимоти Голви</h3>
-                <p>Бизнес-коуч и теннисист</p>
+                <p class="jury-info__sport">Бизнес-коуч и теннисист</p>
                 <ul>
                   <li>Был капитаном теннисной команды в Гарвардском университете</li>
                   <li>Так что может и теннису потренировать!</li>
@@ -267,7 +285,7 @@
               <p class="juri__description">Кот Бегемот</p>
               <div class="juri__description--hover-focus">
                 <h3>Кот Бегемот</h3>
-                <p>Шут Воланда</p>
+                <p class="jury-info__sport">Шут Воланда</p>
                 <ul>
                   <li>Не шалит</li>
                   <li>Никого не трогает</li>

@@ -1,3 +1,63 @@
 .price {
   background-color: $primary-background;
 }
+
+.price__tab {
+  @include list-reset;
+
+  display: flex;
+}
+
+.price__tab-button {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(16, 38, 84, 0.5);
+  background-color: transparent;
+  border: none;
+}
+
+.price__first-block,
+.price__second-block,
+.price__third-block {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  column-gap: 40px;
+}
+
+.price__card {
+  position: relative;
+  height: 448px;
+}
+
+.price__title {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.price__shadow {
+  position: absolute;
+  top: 150px;
+  margin: 0;
+  font-size: 100px;
+  font-weight: 700;
+  color: #e8e8e8;
+}
+
+.price__sum {
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: 700;
+  color: $accent-color;
+}
+
+.price__button {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  color: #102654;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #102654;
+}

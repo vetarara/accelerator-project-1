@@ -11,10 +11,15 @@
 
 // подключить сюда файлы в формате scss не удаётся, сервер начинает выдывать ошибки.
 // блоки
+@import "blocks/page";
+@import "blocks/section-header";
 @import "blocks/main-header";
 @import "blocks/season-ticket";
+@import "blocks/about";
 @import "blocks/price";
 @import "blocks/games";
+@import "blocks/juri";
+@import "blocks/jury-info";
 @import "blocks/features";
 @import "blocks/offers";
 @import "blocks/faq";

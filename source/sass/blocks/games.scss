@@ -1,3 +1,49 @@
+.games__wrapper {
+  display: flex;
+}
+
 .games__description {
+  min-width: 500px;
+  height: 500px;
+  font-size: 18px;
   background-color: $accent-background;
+  color: $secondary-color;
+}
+
+.games__description-wrapper {
+  display: flex;
+}
+
+.games__time div {
+  display: flex;
+  flex-direction: column;
+}
+
+.games__title {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 82px;
+  line-height: 96px;
+  font-weight: 600;
+}
+
+.games__description time {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.games__description time b {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.games__button {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid $secondary-color;
 }
