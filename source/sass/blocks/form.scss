@@ -1,3 +1,18 @@
 .form {
+  padding: 60px 102px;
+  max-width: 684px;
   background-color: #102654;
+  color: $secondary-color;
 }
+
+.form__button {
+  text-align: center;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: $secondary-color;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
