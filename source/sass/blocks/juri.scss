@@ -1,4 +1,6 @@
 .juri__list {
+  @include list-reset;
+
   display: flex;
 }
 

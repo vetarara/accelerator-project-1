@@ -2,6 +2,55 @@
   background-color: $primary-background;
 }
 
-.features__main {
-  background-color: $secondary-background;
+.features__extra {
+  display: flex;
+  justify-content: space-between;
 }
+
+.features__list {
+  display: flex;
+
+}
+
+.features__extra:first-child .features__list {
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+  padding-bottom: 40px;
+}
+
+.features__term,
+.features__details {
+  display: flex;
+  flex-direction: column;
+}
+
+.features__in-numbers {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 700;
+  background: linear-gradient(127deg, #d10a42 0%, #0041ca 45%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.features__in-numbers-unit {
+  color: #2e35ac;
+}
+
+.features__name {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.main-feature {
+  background-color: $secondary-background;
+  color: $secondary-color;
+}
+
+.main-feature__in-numbers {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 700;
+  color: $secondary-color;
+}
+

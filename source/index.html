@@ -10,26 +10,27 @@
 
   <body class="page__body">
     <header class="main-header">
-      <!-- Логотип никуда не ссылается и не обновляет страницу. -->
-      <img class="logo" src="img/logo.svg" width="130" height="26" alt="Supergym">
-      <a class="main-header__contact-number-link" href="tel:+78005555555">8 800 555-55-55</a>
-    </header>
-
-    <main class="main-container">
+      <section class="main-header__info">
+        <img class="logo" src="img/logo.svg" width="100" height="20" alt="Supergym">
+        <a class="main-header__contact-number-link" href="tel:+78005555555">8 800 555-55-55</a>
+      </section>
       <h1 class="visually-hidden">Supergym - твой фитнес-центр в Омске</h1>
-
       <section class="season-ticket">
-        <div class="season-ticket__wrapper"> <!-- wrapper для центрирования -->
+        <div class="season-ticket__wrapper">
           <h2 class="visually-hidden">Покупка абонемента</h2>
           <p class="season-ticket__description">Тренажёрный зал<br>Групповые занятия<br>Кардио-зона</p>
           <div class="season-ticket__buy">
             <span class="season-ticket__text">Омск</span>
             <h3 class="season-ticket__title">ФИТНЕС<br>ЦЕНТР</h3>
-            <a class="season-ticket__link" href="#price">Купить абонемент</a>
           </div>
-          <img class="season-ticket__image" src="img/hero.jpg" width="500" height="524" alt="С нами ты станешь Суперменом!">
+          <a class="season-ticket__link" href="#price">Купить абонемент</a>
         </div>
+        <img class="season-ticket__image" src="img/hero.jpg" width="324" height="390" alt="С нами ты станешь Суперменом!">
       </section>
+    </header>
+
+    <main class="main-container">
+
 
       <section class="about">
         <div class="about__wrapper">
@@ -182,7 +183,7 @@
               <div class="juri__description--hover-focus jury-info">
                 <h3>Анна Павлова</h3>
                 <p class="jury-info__sport">CrossFit</p>
-                <ul>
+                <ul class="jury-info__list">
                   <li>Certified Level 3 Trainer</li>
                   <li>Победитель чемпионата<br>России по CrossFit</li>
                   <li>Опыт — 6 лет</li>
@@ -195,7 +196,7 @@
               <div class="juri__description--hover-focus">
                 <h3>Алексей Лавров</h3>
                 <p class="jury-info__sport">CrossFit</p>
-                <ul>
+                <ul class="jury-info__list">
                   <li>Certified Level 3 Trainer</li>
                   <li>Победитель чемпионата<br>России по CrossFit</li>
                   <li>Опыт — 6 лет</li>
@@ -208,7 +209,7 @@
               <div class="juri__description--hover-focus">
                 <h3>Александр Пашков</h3>
                 <p class="jury-info__sport">CrossFit</p>
-                <ul>
+                <ul class="jury-info__list">
                   <li>Certified Level 3 Trainer</li>
                   <li>Победитель чемпионата<br>России по CrossFit</li>
                   <li>Опыт — 6 лет</li>
@@ -221,7 +222,7 @@
               <div class="juri__description--hover-focus">
                 <h3>Мария Кетова</h3>
                 <p class="jury-info__sport">CrossFit</p>
-                <ul>
+                <ul class="jury-info__list">
                   <li>Certified Level 3 Trainer</li>
                   <li>Победитель чемпионата<br>России по CrossFit</li>
                   <li>Опыт — 6 лет</li>
@@ -234,7 +235,7 @@
               <div class="juri__description--hover-focus">
                 <h3>Жанет Дженкинс</h3>
                 <p class="jury-info__sport">CrossFit</p>
-                <ul>
+                <ul class="jury-info__list">
                   <li>Тренировала певицу Pink</li>
                   <li>Author of "The Hollywood Trainer Weight-Loss Plan - 21 Days to Make Healthy Living a Lifetime Habit"</li>
                   <li>Тренирует с 1997</li>
@@ -247,7 +248,7 @@
               <div class="juri__description--hover-focus">
                 <h3>Алёша Попович</h3>
                 <p class="jury-info__sport">CrossFit</p>
-                <ul>
+                <ul class="jury-info__list">
                   <li>Могучий богатырь</li>
                   <li>Победил<br>Тугарина Змея</li>
                   <li>Говорит с конём?..</li>
@@ -260,7 +261,7 @@
               <div class="juri__description--hover-focus">
                 <h3>Иван Поддубный</h3>
                 <p class="jury-info__sport">CrossFit</p>
-                <ul>
+                <ul class="jury-info__list">
                   <li>В его честь назван парк в Ейске!</li>
                   <li>У него были единичные поражения в схватках,<br>но он не проиграл ни одного соревнования</li>
                   <li>Опыт — 40 лет</li>
@@ -273,7 +274,7 @@
               <div class="juri__description--hover-focus">
                 <h3>Тимоти Голви</h3>
                 <p class="jury-info__sport">Бизнес-коуч и теннисист</p>
-                <ul>
+                <ul class="jury-info__list">
                   <li>Был капитаном теннисной команды в Гарвардском университете</li>
                   <li>Так что может и теннису потренировать!</li>
                   <li>Автор книги "Внутренняя игра в теннис"</li>
@@ -286,7 +287,7 @@
               <div class="juri__description--hover-focus">
                 <h3>Кот Бегемот</h3>
                 <p class="jury-info__sport">Шут Воланда</p>
-                <ul>
+                <ul class="jury-info__list">
                   <li>Не шалит</li>
                   <li>Никого не трогает</li>
                   <li>Починяет примус</li>
@@ -300,73 +301,73 @@
       <section class="features">
         <h2 class="section-header">Наши преимущества</h2>
         <div class="features__wrapper">
-          <div class="features__part">
+          <div class="features__extra">
             <div>
               <!-- На этот див нельзя вешать класс. -->
-               <dl>
-                <dt>
+               <dl class="features__list">
+                <dt class="features__term">
                   <span class="features__in-numbers">900</span>
-                  <span class="features__in-nubers-unit">кв/м</span>
+                  <span class="features__in-numbers-unit">кв/м</span>
                 </dt>
-                <dd>
-                  <span class="features__in-numbers">Площадь</span>
-                  <span class="features__in-numbers">Занимайтесь без очередей<br>и толкучки</span>
+                <dd class="features__details">
+                  <span class="features__name">Площадь</span>
+                  <span class="">Занимайтесь без очередей<br>и толкучки</span>
                 </dd>
               </dl>
             </div>
             <div>
               <!-- На этот див нельзя вешать класс. -->
-               <dl>
-                <dt>
+               <dl class="features__list">
+                <dt class="features__term">
                   <span class="features__in-numbers">70</span>
-                  <span class="features__in-nubers-unit">машин</span>
+                  <span class="features__in-numbers-unit">машин</span>
                 </dt>
-                <dd>
-                  <span class="features__in-numbers">Собственная парковка</span>
-                  <span class="features__in-numbers">Вы всегда найдёте место<br>для своей машины на нашей<br>парковке</span>
+                <dd class="features__details">
+                  <span class="features__name">Собственная парковка</span>
+                  <span class="">Вы всегда найдёте место<br>для своей машины на нашей<br>парковке</span>
                 </dd>
               </dl>
             </div>
           </div>
 
-          <div class="features__part">
+          <div class="features__extra">
             <div>
               <!-- На этот див нельзя вешать класс. -->
-               <dl>
-                <dt>
+               <dl class="features__list">
+                <dt class="features__term">
                   <span class="features__in-numbers">350</span>
-                  <span class="features__in-nubers-unit">мест</span>
+                  <span class="features__in-numbers-unit">мест</span>
                 </dt>
-                <dd>
-                  <span class="features__in-numbers">Комфорт</span>
-                  <span class="features__in-numbers">Просторные раздевалки,<br>душевые, фен, Wi-Fi, кулеры</span>
+                <dd class="features__details">
+                  <span class="features__name">Комфорт</span>
+                  <span class="">Просторные раздевалки,<br>душевые, фен, Wi-Fi, кулеры</span>
                 </dd>
               </dl>
             </div>
             <div>
               <!-- На этот див нельзя вешать класс. -->
-               <dl>
-                <dt>
+               <dl class="features__list">
+                <dt class="features__term">
                   <span class="features__in-numbers">5+</span>
-                  <span class="features__in-nubers-unit">лет</span>
+                  <span class="features__in-numbers-unit">лет</span>
                 </dt>
-                <dd>
-                  <span class="features__in-numbers">Тренерский опыт</span>
-                  <span class="features__in-numbers">Добивайтесь своих целей<br>быстрее с профессиональным<br>тренером</span>
+                <dd class="features__details">
+                  <span class="features__name">Тренерский опыт</span>
+                  <span class="">Добивайтесь своих целей<br>быстрее с профессиональным<br>тренером</span>
                 </dd>
               </dl>
             </div>
           </div>
         </div>
-        <div class="features__main">
+        <div class="features__main main-feature">
           <!-- На dl нельзя вешать класс? Или тут появится ещё один див, на который его нельзя будет вешать -->
           <dl>
             <dt>
-              <span class="features__in-numbers">100</span>
-              <span class="features__in-nubers-unit">Тренажёров</span>
+              <span class="main-feature__in-numbers">100</span>
+              <span class="main-feature__in-numbers-unit">Тренажёров</span>
             </dt>
             <dd>
-              <span class="features__in-numbers">Современные тренажёры на все группы<br>мышц</span>
+              <span class="">Современные тренажёры на все группы<br>мышц</span>
             </dd>
           </dl>
         </div>

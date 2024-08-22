@@ -1,9 +1,14 @@
 .page__body {
+  margin: 0 auto;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 22px;
   font-weight: 300;
   color: $primary-color;
   background-color: #ffffff;
-}
 
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

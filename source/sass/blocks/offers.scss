@@ -1,3 +1,52 @@
+.offers__wrapper {
+  display: flex;
+}
+
 .offers__main {
+  display: flex;
   background-color: $accent-background;
+  color: $secondary-color;
+}
+
+.offers__main-description > div > span {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.offers__main-description > div > h3 {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 700;
+}
+
+.offers__main-description > div > p {
+  font-size: 18px;
+}
+
+.offers__main-description > a {
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: $secondary-color;
+  border-bottom: 1px solid #ffffff;
+}
+
+.offers__extra {
+  color: #1c3374;
+}
+
+.offers__extra > div > h3 {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.offers__extra > a {
+  border-bottom: 1px solid #74819c;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #1c3374;
 }

@@ -1,14 +1,35 @@
 .main-header {
+  padding: 16px 15px 32px;
+  background-image: linear-gradient(to right, #1c3477, #1c3477, #1a3578, #73184b, #b4022a);
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 45px 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 102px 120px;
+  }
+}
+
+.main-header__info {
   display: flex;
   justify-content: space-between;
-  padding: 30px 102px;
-  background-image: linear-gradient(to right, #1c3477, #1c3477, #1a3578, #73184b, #b4022a);
 }
 
 .main-header__contact-number-link {
-  font-size: 26px;
-  line-height: 26px;
+  font-size: 22px;
+  line-height: 22px;
   font-weight: 700;
   color: $secondary-color;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 26px;
+  }
 }
